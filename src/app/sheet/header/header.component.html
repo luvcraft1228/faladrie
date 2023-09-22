@@ -1,0 +1,20 @@
+<div class="main-header-container">
+  <label for="name">Nom: </label>
+  <input type="text" id="name" name="name">
+
+  <label for="player">Joueur: </label>
+  <input type="text" id="player" name="player">
+
+  <label for="player">Race: </label>
+  <select id="race" name="race" [(ngModel)]="selectedRace" (ngModelChange)="selectRace.emit(selectedRace)">
+      <option value=undefined>Choose</option>
+      <option *ngFor="let race of races" [ngValue]="race">{{ race.name }}</option>
+  </select>
+
+  <ng-container *ngIf="selectedRace">
+    <ng-container *ngFor="let property of selectedRace.physicalProperties">
+      <label [for]="property.name">{{ property.name }}: </label>
+      <input type="text" [id]="property.name" [name]="property.name">
+    </ng-container>
+  </ng-container>
+</div>

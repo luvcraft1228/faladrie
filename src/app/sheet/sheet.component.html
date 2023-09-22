@@ -1,0 +1,10 @@
+<div class="main-sheet-container">
+  <h2>Fiche de personnage | race : {{ selectedRace?.name }}</h2>
+  <app-header
+    [races]="races"
+    (selectRace)="selectRace($event)">
+  </app-header>
+  <app-health [race]="selectedRace"></app-health>
+  <app-essence [race]="selectedRace"></app-essence>
+  <app-status></app-status>
+</div>

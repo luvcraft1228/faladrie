@@ -1,0 +1,32 @@
+.circle {
+  display: block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#tracker-main-container {
+  /*position: absolute;*/
+  border: solid 2px black;
+  width: 24px;
+  height: 24px;
+}
+
+.tracker {
+  position: relative;
+  /*top: 50%; */
+  left: 45%;
+  width: 10%;
+  height: 100%;
+  background-color: black;
+}
+
+#non-lethal-tracker {
+  transform: rotate(45deg);
+}
+
+#lethal-tracker {
+  transform: rotate(-45deg);
+  top: -100%;
+
+}
+

@@ -1,0 +1,6 @@
+<div id="healthContainer" *ngIf="race">
+  <app-hp-tracker class="hp" *ngFor="let hp of minHealth"></app-hp-tracker>
+  <div class="vertical-bar"></div>
+  <app-hp-tracker *ngFor="let hp of maxHealth"></app-hp-tracker>
+
+</div>

@@ -1,0 +1,18 @@
+#healthContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  max-height: 30px;
+}
+
+.hp {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.vertical-bar {
+  height: 30px;
+  width: 3px;
+  background: black;
+}
