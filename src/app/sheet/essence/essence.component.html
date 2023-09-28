@@ -1,1 +1,4 @@
-<p>essence works!</p>
+<div id="essenceContainer" *ngIf="race">
+  <div class="title">Essence naturelle : </div>
+  <app-hp-tracker class="essence" *ngFor="let ess of essence"></app-hp-tracker>
+</div>

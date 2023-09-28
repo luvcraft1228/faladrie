@@ -15,7 +15,7 @@ export class HpTrackerComponent implements OnInit {
   }
 
   upgradeWound () {
-    if (this.wound < 3) {
+    if (this.wound < 4) {
       this.wound++;
     } else {
       this.wound = 0;

@@ -1,0 +1,45 @@
+.equipment-container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 90px;
+}
+
+.equipment-name-container {
+  flex-grow: 1;
+  flex-basis: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipment-name-container>input{
+  padding: 8px;
+  width: 80%;
+}
+
+.mods-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 200px;
+}
+
+.mods-container>input {
+  padding: 5px;
+}
+
+.damage-type-container {
+  flex-grow: 1;
+  flex-basis: 200px;
+  height: 90px;
+}
+.damage-type-container>input {
+  padding: 10px;
+  width: calc(100% - 25px);
+  height: calc(100% - 25px);
+}
+
+.container {
+  border: 1px solid black;
+}

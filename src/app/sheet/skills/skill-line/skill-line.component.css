@@ -1,0 +1,29 @@
+.skill-line {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 750px;
+  gap: 40px;
+}
+
+.level {
+  display: flex;
+  flex-shrink: 1;
+  flex-flow: row nowrap;
+}
+
+.skill-input {
+  margin: 4px;
+  flex-grow: 1;
+}
+
+#level1 {
+  width: 100%;
+}
+
+#level3 {
+  width: 108px;
+}
+
+#level2 {
+  width: 64px;
+}

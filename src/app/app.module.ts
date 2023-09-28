@@ -7,9 +7,14 @@ import { SheetComponent } from './sheet/sheet.component';
 import { HealthComponent } from './sheet/health/health.component';
 import { EssenceComponent } from './sheet/essence/essence.component';
 import { HeaderComponent } from './sheet/header/header.component';
-import { SkillComponent } from './sheet/skill/skill.component';
 import { StatusComponent } from './sheet/status/status.component';
 import {FormsModule} from "@angular/forms";
+import { TrackerComponent } from './tracker/tracker.component';
+import { SkillsComponent } from './sheet/skills/skills.component';
+import { SkillComponent } from './sheet/skills/skill/skill.component';
+import { SkillLineComponent } from './sheet/skills/skill-line/skill-line.component';
+import { InventoryComponent } from './sheet/inventory/inventory.component';
+import { EquipmentComponent } from './sheet/inventory/equipment/equipment.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +24,13 @@ import {FormsModule} from "@angular/forms";
     HealthComponent,
     EssenceComponent,
     HeaderComponent,
+    StatusComponent,
+    TrackerComponent,
+    SkillsComponent,
     SkillComponent,
-    StatusComponent
+    SkillLineComponent,
+    InventoryComponent,
+    EquipmentComponent,
   ],
   imports: [
     BrowserModule,

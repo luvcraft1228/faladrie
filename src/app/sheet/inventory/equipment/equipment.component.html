@@ -1,0 +1,12 @@
+<div class="equipment-container">
+  <div class="equipment-name-container container">
+    <input [(ngModel)]="equipment.name">
+  </div>
+  <div class="mods-container container">
+    <input *ngFor="let mod of equipment.mods" [(ngModel)]="mod.name">
+  </div>
+  <div class="mods-container container">
+  <div class="damage-type-container ">
+    <input [(ngModel)]="equipment.type">
+  </div>
+</div>

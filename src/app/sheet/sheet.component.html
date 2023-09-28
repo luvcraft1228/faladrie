@@ -1,10 +1,17 @@
 <div class="main-sheet-container">
-  <h2>Fiche de personnage | race : {{ selectedRace?.name }}</h2>
+  <div class="header">
+    <h2>Fiche de personnage  </h2>
+    <span class="material-icons click" (click)="save()">save</span>
+  </div>
+
   <app-header
     [races]="races"
+    [character]="character"
     (selectRace)="selectRace($event)">
   </app-header>
-  <app-health [race]="selectedRace"></app-health>
-  <app-essence [race]="selectedRace"></app-essence>
-  <app-status></app-status>
+  <app-health [race]="selectedRace" [character]="character"></app-health>
+  <app-essence [race]="selectedRace" [character]="character" ></app-essence>
+  <app-status [character]="character"></app-status>
+  <app-skills [race]="selectedRace" [character]="character"></app-skills>
+  <app-inventory [character]="character"></app-inventory>
 </div>

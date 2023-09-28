@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import Character from "../../core/models/Character";
 
 @Component({
   selector: 'app-status',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./status.component.css']
 })
 export class StatusComponent {
+  @Input() character!: Character;
 
 }

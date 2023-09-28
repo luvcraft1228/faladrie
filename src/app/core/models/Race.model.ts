@@ -13,7 +13,6 @@ export class Race implements RaceInterface {
 
   constructor(values?: RaceInterface) {
     if (values) {
-      console.log('values: ', values);
       Object.assign(this, values);
     }
   }

@@ -20,6 +20,10 @@
   background-color: black;
 }
 
+#tracker-main-container.circle.disabled {
+  border: 1px grey dashed;
+}
+
 #non-lethal-tracker {
   transform: rotate(45deg);
 }

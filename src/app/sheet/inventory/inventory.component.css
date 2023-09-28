@@ -1,0 +1,54 @@
+.inventory-container {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 200px;
+  gap: 10px;
+  padding: 16px;
+}
+
+.inventory-input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.inventory-container, .inventory-title {
+  border: 1px solid black;
+}
+
+.weapon-title {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.weapon-title>p {
+  border: 1px solid black;
+  margin: 0;
+  padding: 10px;
+}
+
+.weapon {
+  flex-grow: 1;
+  flex-basis: 200px;
+}
+
+.mods {
+  flex-grow: 1;
+  flex-basis: 200px;
+}
+
+.dmg {
+  flex-grow: 1;
+  flex-basis: 200px;
+  width: 425px;
+}
+
+.notes-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.notes {
+  padding: 20px;
+}

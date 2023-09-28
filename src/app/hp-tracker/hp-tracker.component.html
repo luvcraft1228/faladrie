@@ -1,8 +1,9 @@
 <div
   class="circle"
   (click)="upgradeWound()"
+  [class.disabled]="wound === 0"
   id=tracker-main-container>
-  <div *ngIf="wound == 1 || wound == 2" id="non-lethal-tracker" class="tracker"></div>
-  <div *ngIf="wound == 2" id="lethal-tracker" class="tracker"></div>
-  <div *ngIf="wound == 3" id="permanent-tracker" class="tracker"></div>
+  <div *ngIf="wound == 2 || wound == 3" id="non-lethal-tracker" class="tracker"></div>
+  <div *ngIf="wound == 3" id="lethal-tracker" class="tracker"></div>
+  <div *ngIf="wound == 4" id="permanent-tracker" class="tracker"></div>
 </div>

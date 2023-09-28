@@ -1,0 +1,25 @@
+<div class="inventory-title">
+  <p class="title">Possession (Contenu des Sacs, Engins et Appareils)</p>
+</div>
+<div class="inventory-container">
+  <input *ngFor="let item of inventory" class="inventory-input" [(ngModel)]="item.name">
+</div>
+<div class="weapon-title">
+  <div class="weapon title">Armes</div>
+  <div class="mods title">Mods</div>
+  <div class="dmg title">DMG type</div>
+</div>
+<app-equipment [equipment]="character.weapon1"></app-equipment>
+<app-equipment [equipment]="character.weapon2"></app-equipment>
+<div class="weapon-title">
+  <div class="weapon title">Protection</div>
+  <div class="mods title">Mods</div>
+  <div class="dmg title">DEF type</div>
+</div>
+<app-equipment [equipment]="character.defense1"></app-equipment>
+<app-equipment [equipment]="character.defense2"></app-equipment>
+<app-equipment [equipment]="character.defense3"></app-equipment>
+<div class="notes-container">
+  <label class="title" for="notes">Notes</label>
+  <textarea [(ngModel)]="character.notes" id="notes" name="notes" class="notes" rows="25" cols="150"></textarea>
+</div>

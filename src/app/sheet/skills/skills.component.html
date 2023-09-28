@@ -1,0 +1,12 @@
+<div class="skills-header">
+  <h2>Compétence</h2>
+  <span class="spacer"></span>
+  <h2>Niveau 2</h2>
+  <h2>Niveau 3</h2>
+</div>
+<div class="skills-container" *ngIf="race">
+  <app-skill [skill]="race.physical" [characterSkill]="character.PhysicalSkills" [name]="'Forme Physique'"></app-skill>
+  <app-skill [skill]="race.social" [name]="'Habileté Sociale'"></app-skill>
+  <app-skill [skill]="race.tech" [name]="'Maitrise des Technologies'"></app-skill>
+  <app-skill [skill]="race.spirit" [name]="'Spiritualité'"></app-skill>
+</div>

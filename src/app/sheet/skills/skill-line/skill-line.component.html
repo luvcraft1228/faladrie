@@ -1,0 +1,23 @@
+<div class="skill-line">
+  <div id="level1" class="level">
+    <input class="skill-input" type="text">
+    <app-tracker *ngIf="line.firstLevelCircles >= 1"></app-tracker>
+    <app-tracker *ngIf="line.firstLevelCircles >= 2"></app-tracker>
+    <app-tracker *ngIf="line.firstLevelCircles >= 3"></app-tracker>
+    <app-tracker *ngIf="line.firstLevelCircles >= 4"></app-tracker>
+    <app-tracker *ngIf="line.firstLevelCircles >= 5"></app-tracker>
+    <app-tracker *ngIf="line.firstLevelCircles >= 6"></app-tracker>
+
+
+  </div>
+  <div class="spacer"></div>
+  <div id="level2" class="level">
+    <app-tracker></app-tracker>
+    <app-tracker></app-tracker>
+  </div>
+  <div id="level3" class="level">
+    <app-tracker></app-tracker>
+    <app-tracker></app-tracker>
+    <app-tracker></app-tracker>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.circle {
+  display: block;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.center {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.checked {
+  background: black;
+}
+
+#tracker-main-container {
+  /*position: absolute;*/
+  border: solid 2px black;
+  width: 24px;
+  height: 24px;
+}

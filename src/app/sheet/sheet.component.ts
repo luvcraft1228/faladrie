@@ -1,5 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import { Race } from '../core/models/Race.model';
+import {RaceService} from "../core/services/race.service";
+import {CharacterService} from "../core/services/character.service";
+import Character from "../core/models/Character";
 
 @Component({
   selector: 'app-sheet',
@@ -10,8 +13,30 @@ import { Race } from '../core/models/Race.model';
 export class SheetComponent implements OnInit {
   races!: Race[];
   selectedRace?: Race;
+  character!: Character;
+
+  constructor(
+    private raceService: RaceService,
+    private characterService: CharacterService) {
+  }
 
   ngOnInit() {
+    this.initRaces();
+    this.selectedRace = this.raceService.selectedRace;
+    this.character = this.characterService.savedCharacter;
+    console.log('saved Character : ', this.character);
+  }
+
+  save() {
+    console.log('character to save : ', this.character);
+    this.characterService.saveCharacter(this.character);
+  }
+
+  selectRace(race: Race) {
+    this.selectedRace = race;
+  }
+
+  initRaces() {
     this.races = [
       new Race({
         essenceNat: 15,
@@ -66,12 +91,6 @@ export class SheetComponent implements OnInit {
         ]
       })
     ]
-    console.log('races:  ', this.races)
-  }
-
-  selectRace(race: Race) {
-    console.log('sheet select race : ', race.name);
-    this.selectedRace = race;
   }
 
 }

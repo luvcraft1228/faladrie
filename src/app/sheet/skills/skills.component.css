@@ -1,0 +1,6 @@
+.skills-header {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 40px;
+  max-width: 750px;
+}

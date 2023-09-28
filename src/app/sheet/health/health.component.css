@@ -4,6 +4,7 @@
   flex-direction: row;
   gap: 4px;
   max-height: 30px;
+  align-items: center;
 }
 
 .hp {
@@ -11,8 +12,13 @@
   max-height: 30px;
 }
 
+.hp:nth-child(7) {
+  margin-right: 20px;
+}
+
 .vertical-bar {
   height: 30px;
   width: 3px;
   background: black;
+  margin: 0 10px;
 }

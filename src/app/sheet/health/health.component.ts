@@ -1,5 +1,6 @@
 import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 import { Race } from 'src/app/core/models/Race.model';
+import Character from "../../core/models/Character";
 
 @Component({
   selector: 'app-health',
@@ -8,6 +9,7 @@ import { Race } from 'src/app/core/models/Race.model';
 })
 export class HealthComponent implements OnChanges {
   @Input() race?: Race;
+  @Input() character!: Character;
   minHealth : { status: number }[] = []
   maxHealth : { status: number }[] = []
 
